@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.logo {
+    height: 200px;
+}
+
+.botao-contato {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #c51111;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.mario-luigi {
+    height: 450px;
+}
+
+body {
+
+    height: 100vh;
+
+}
+
+.caixa-principal {
+    width: 50%;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 100vh;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    ;
+
+}
+
+p {
+    color: white;
+}
+
+.img-wttp {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+
+}
+
+.cabeçalho img {
+    height: 60px;
+
+}
+
+.cabeçalho a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cabeçalho a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.botao-contato:hover {
+    background-color: rgba(6, 240, 248, 0.582);
+    font-size: 14px;
+    transition: 0.7s ease-in-out;
+}
+
+.fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: fixed;
+    top: 30px;
+    left: -11%;
+    padding: 20px;
+    border-radius: 5px;
+    transform: translatex(-50%);
+    transition: 1s ease-in-out;
+
+}
+
+.orçamento {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #c51111;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+}
+
+textarea {
+    height: 100px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: 1s ease-in-out;
+}
+
+/*mEDIA QUERY*/
+/* max -> valor menor que Npx, aplica o css do MEDIA
+min -> valor maior que Npx, aplica o css do MEDIA
+Media é sempre o ultimo do css */
+
+@media (max-width:1000px) {
+
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+.caixa-principal{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.mario-luigi{
+width: 80vw;
+height: auto;
+}
+
+.cabeçalho{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeçalho img{
+    display: none;
+}
+
+.cabeçalho a{
+    font-size: 20px;
+}
+.fale-conosco{
+    left: -11%;
+
+}
+}
+
+/*
+inicial
+top:30%;
+left: -300px;
+
+final
+top: 30%
+left: 50%
+transform: translatex (-50%);
+*/
